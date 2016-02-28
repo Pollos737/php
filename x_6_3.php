@@ -18,7 +18,7 @@
             $display = '<p>When you add '.$firstNumber.' and '.$secondNumber.' you get '.$total.'.</p>';
             return $display;
         }
-    debugger;
+
     ?>
 </body>
 </html>

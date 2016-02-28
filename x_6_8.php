@@ -9,15 +9,24 @@
     <?php
         $items = array();
 
+
         for($i = 1; $i <= 5; $i++){
+
+
             $user_input_html = 'item'.$i;
             $userInput = $_POST[$user_input_html];
 
-            array_push($items, $userInput);
+            if($userInput !== ""){
 
-            $array_number = $i - 1;
+                array_push($items, $userInput);
+                $array_number = $i - 1;
 
-            print "<li>$items[$array_number]</li>";
+                print "<li>$items[$array_number]</li>";
+
+
+            }
+
+
         }
     ?>
     </ul
