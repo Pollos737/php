@@ -1,0 +1,48 @@
+/*CSS Stylesheet*/
+
+html {margin:0; padding:0;}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #F0E68C;
+}
+
+main {
+    margin-top: 10px;
+    margin-left: 1em;
+    background-color: #E6E6FA;
+    width: 380px;
+    padding: 20px;
+}
+
+#sign_up {
+    display: block;
+}
+
+input {
+    font-size: 16px;
+}
+
+select {
+    font-size: 16px;
+}
+
+#header {
+    margin-top: -.5em;
+    margin-left: -1em;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+#server {
+    margin-top: 3px;
+}
+
+
+
+article, aside, figure, footer, header, nav, section {
+    display: block;
+}
