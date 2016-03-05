@@ -46,7 +46,7 @@
                     $seaching = stripos($city, $citySearch);
 
                     if($seaching === false){
-                    
+
                     } else {
                         print "<p>We found the city! : $city";
                     }
