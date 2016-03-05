@@ -7,7 +7,12 @@
 </head>
 <body>
 <main>
+    <h2>Recursive Programming</h2>
+    <form name="form1" method="post" action="<?php print $_SERVER['PHP_SELF'] ?>">
+    <?php
 
+    ?>
+    </form>
 </main>
 </body>
 </html>
