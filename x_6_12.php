@@ -33,7 +33,7 @@
 
         $display = 'dummy';
         $total = 0;
-        $errorControl = 0;
+        $err_cntr = 0;
 
         $display = "<table border ='1'>\n";
         $display .= "<tr>";
