@@ -7,7 +7,7 @@
 
 <body>
 <div id="header">
-    <a href="assignment_4_register.php">
+    <a href="assignment_4.php">
         <img src= "images/KingLibLogo.jpg"
              alt = "King Library Header Logo"
              height= "84"  width="800" id= "header_image"/>

@@ -43,7 +43,14 @@
 
     </div>
 
-    <div id="findtitle"></div>
+    <div id="findtitle">
+        <h4 class="header_text">Enter KeyWord to Search for Titles:</h4>
+        <form method="post" action="assignment_4_booklist.php">
+            <input type="text" name="book_search">
+            <p>(leave blank to list all titles)</p>
+            <button type="submit">Find Titles</button>
+        </form>
+    </div>
 
 </body>
 </html>
