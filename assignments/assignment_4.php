@@ -51,6 +51,11 @@
             <button type="submit">Find Titles</button>
         </form>
     </div>
-
+    <div id = "server">
+        <?php
+        include "assignment_4_common_functions.php";
+        getServer();
+        ?>
+    </div>
 </body>
 </html>

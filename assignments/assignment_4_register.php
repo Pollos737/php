@@ -69,18 +69,8 @@
 </main>
 <div id = "server">
     <?php
-
-    $server = $_SERVER['SERVER_NAME'];
-    $positionFound = strpos($server, 'profperry');
-
-    if ($positionFound === false)
-    {
-        $server = 'localhost';
-    } else {
-        $server = 'Practice Area';
-    }
-
-    print $server;
+        include "assignment_4_common_functions.php";
+        getServer();
     ?>
 </div>
 </body>

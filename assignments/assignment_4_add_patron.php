@@ -16,6 +16,7 @@
 <main>
 
     <?php
+    include "assignment_4_common_functions.php";
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
     $fullName = "$firstName $lastName";
@@ -25,46 +26,7 @@
     $currentYear = date('Y');
     $age = $currentYear - $birthYear;
 
-    $errorFound ="n"; //If this variable is set to y, the program will exit
-
-    //This next code will make sure the fields were filled out
-    if(empty($firstName))
-    {
-        print "<p>Error: Please Enter First Name</p>";
-        $errorFound = "y";
-    }
-    if(empty($lastName))
-    {
-        print "<p>Error: Please Enter Last Name</p>";
-        $errorFound = "y";
-    }
-    if(empty($userEmail))
-    {
-        print "<p>Error: Please Enter an Email</p>";
-        $errorFound = "y";
-    }
-    if($city == "empty")
-    {
-        print "<p>Error: Please Select A City</p>";
-        $errorFound = "y";
-    }
-    if(empty($birthYear))
-    {
-        print "<p>Error: Please Enter a Birth Year";
-        $errorFound = "y";
-    } elseif(!(is_numeric($birthYear)) || $birthYear < 1900 || $birthYear > $currentYear )
-    {
-        print "<p>Error: Please enter a valid 4 digit number for birth year</p>";
-        $errorFound = "y";
-    }
-
-    if($errorFound == "y")
-    {
-        print "<p>Go BACK and make the corrections above</p>";
-        print "</body></html>";
-        return exit;
-    }
-
+    doValidtion($firstName, $lastName, $userEmail, $city, $birthYear);
 
     //adding data to patrons.txt file
     $filename = 'data/'.'patrons.txt';
@@ -95,20 +57,10 @@
     <div id="viewPatrons">
         <span>For Admin Use Only: </span><a href="assignment_4_view_patron.php">View Patrons</a>
     </div>
-    <div id="server">
+    <div id = "server">
         <?php
 
-            $server = $_SERVER['SERVER_NAME'];
-        $positionFound = strpos($server, 'profperry');
-
-        if ($positionFound === false)
-        {
-            $server = 'localhost';
-        } else {
-            $server = 'Practice Area';
-        }
-
-        print $server;
+        getServer();
         ?>
     </div>
 

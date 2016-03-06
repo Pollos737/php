@@ -16,7 +16,7 @@
 </header>
 <main>
     <?php
-
+        include "assignment_4_common_functions.php";
         $display = '';
         //getting user input
         if(isset($_POST['book_search'])){
@@ -71,6 +71,10 @@
 
     ?>
 </main>
-
+<div id = "server">
+    <?php
+        getServer();
+    ?>
+</div>
 </body>
 </html>
